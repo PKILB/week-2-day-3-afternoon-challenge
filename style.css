@@ -15,3 +15,7 @@ body {
 .bg-color {
   background-color: #facdbc;
 }
+
+.cart {
+  min-height: calc(100vh-162px);
+}
