@@ -20,23 +20,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <style>
-    body.debug .container,
-    body.debug .container-fluid {
-      outline: 2px double blue;
-      outline-offset: -2px;
-    }
+  <!-- <style> -->
+  <!-- body.debug .container, -->
+  <!-- body.debug .container-fluid { -->
+  <!-- outline: 2px double blue; -->
+  <!-- outline-offset: -2px; -->
+  <!-- } -->
 
-    body.debug .row {
-      outline: 2px dashed red;
-      outline-offset: -2px;
-    }
+  <!-- body.debug .row { -->
+  <!-- outline: 2px dashed red; -->
+  <!-- outline-offset: -2px; -->
+  <!-- } -->
 
-    body.debug [class*="col-"] {
-      outline: 2px dotted forestgreen;
-      outline-offset: -3px;
-    }
-  </style>
+  <!-- body.debug [class*="col-"] { -->
+  <!-- outline: 2px dotted forestgreen; -->
+  <!-- outline-offset: -3px; -->
+  <!-- } -->
+  <!-- </style> -->
 
   <body class="debug">
     <header class="text-light text-center header-bg">
@@ -50,19 +50,100 @@
     </header>
 
     <main>
-      <div class="container-fluid">
+      <div class="container-fluid pt-5">
         <div class="row">
-          <div class="col-5"></div>
+          <div class="col-5 bg-dark"></div>
           <div class="col-7">
+            <div class="row">
+              <div class="col-12">
+                <h1>Toppings</h1>
+              </div>
+            </div>
+
             <div class="row" id="toppings-cards">
-              <div class="col-"></div>
+              <div class="col-6 col-md-4">
+                <div class="card topping-card">
+                  <img
+                    src="https://www.shugarysweets.com/wp-content/uploads/2020/08/peanut-butter-cups-44-720x720.jpg"
+                    alt="Peanut Butter Cup"
+                  />
+                  <div class="card-body">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <p><b>Peanut Butter Cups</b></p>
+                      <p>Price: $0.75</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <h1>Ice Cream</h1>
+              </div>
+            </div>
+
+            <div class="row" id="ice-cream-cards">
+              <div class="col-6 col-md-4">
+                <div class="card ice-cream-card">
+                  <img
+                    src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmFuaWxsYSUyMGljZSUyMGNyZWFtfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Vanilla Ice Cream"
+                  />
+                  <div class="card-body">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <p><b>Vanilla Ice Cream</b></p>
+                      <p>Price: $2.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <h1>Vessels</h1>
+              </div>
+            </div>
+
+            <div class="row" id="cone-cards">
+              <div class="col-6 col-md-4">
+                <div class="card cone-card">
+                  <img
+                    src="https://images.unsplash.com/photo-1559703248-dcaaec9fab78?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aWNlJTIwY3JlYW0lMjBjb25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Cone"
+                  />
+                  <div class="card-body">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <p><b>Waffle Cone</b></p>
+                      <p>Price: $0.50</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </main>
 
-    <footer></footer>
+    <footer class="bg-dark text-light">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex justify-content-center align-items-center">
+              <h5>We Make Our Ice Cream With Pure Hatred</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="app.js"></script>
   </body>
